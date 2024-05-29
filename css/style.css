@@ -41,6 +41,6 @@ th {
 }
 
 tr#discounted {
-    font-weight: bolder;
-    color: rgb(92, 161, 234);
+  font-weight: bolder;
+  color: rgb(92, 161, 234);
 }

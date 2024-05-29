@@ -51,7 +51,7 @@ const startProcessing = () => {
   document.getElementById("data").innerHTML = "<tr><th>Name</th><th>Category</th><th>Discounted Total Value</th></tr>";
   processedProducts.map((product) => {
     if (product.category === discountCategory) {
-      document.getElementById("data").innerHTML += `<tr id="discounted"><td>${product.name}</td><td>${product.category}</td><td>$${Number(
+      document.getElementById("data").innerHTML += `<tr id="discounted"><td>*${product.name}</td><td>${product.category}</td><td>$${Number(
         product.discountedTotalValue
       ).toLocaleString("en-us", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td></tr>`;
     } else {
