@@ -53,15 +53,11 @@ const startProcessing = () => {
     if (product.category === discountCategory) {
       document.getElementById("data").innerHTML += `<tr id="discounted"><td>${product.name}</td><td>${product.category}</td><td>$${Number(
         product.discountedTotalValue
-      )
-        .toFixed(2)
-        .toLocaleString("en-us")}</td></tr>`;
+      ).toLocaleString("en-us", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td></tr>`;
     } else {
       document.getElementById("data").innerHTML += `<tr><td>${product.name}</td><td>${product.category}</td><td>$${Number(
         product.discountedTotalValue
-      )
-        .toFixed(2)
-        .toLocaleString("en-us")}</td></tr>`;
+      ).toLocaleString("en-us", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td></tr>`;
     }
   });
 };
