@@ -45,7 +45,13 @@ const startProcessing = () => {
   ];
 
   const discountCategory = document.querySelector('input[name="category"]:checked').value;
-  const discountRate = 0.1; // 10% discount
+  let discountRate = Number(document.querySelector('input[name="discount"]').value);
+  if (discountRate >= 100) {
+    discountRate = 100;
+  }
+  if (discountRate >= 1) {
+    discountRate = discountRate / 100;
+  }
   console.log(processProducts(products, discountCategory, discountRate));
   const processedProducts = processProducts(products, discountCategory, discountRate);
   document.getElementById("data").innerHTML = "<tr><th>Name</th><th>Category</th><th>Discounted Total Value</th></tr>";

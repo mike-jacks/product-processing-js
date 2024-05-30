@@ -50,3 +50,7 @@ tr#discounted {
 form {
   text-align: center;
 }
+
+input {
+  margin: 10px;
+}
