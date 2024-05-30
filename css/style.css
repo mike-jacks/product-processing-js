@@ -1,5 +1,6 @@
 body {
   background-color: #1f1f1f;
+  color: #f1f1f1;
 }
 button {
   border-radius: 10px;
@@ -16,6 +17,7 @@ button {
   width: 100vw;
   align-items: center;
   margin-top: 100px;
+  gap: 20px;
 }
 
 button:hover {
@@ -43,4 +45,8 @@ th {
 tr#discounted {
   font-weight: bolder;
   color: rgb(92, 161, 234);
+}
+
+form {
+  text-align: center;
 }

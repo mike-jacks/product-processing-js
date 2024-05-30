@@ -44,7 +44,7 @@ const startProcessing = () => {
     },
   ];
 
-  const discountCategory = "Apparel";
+  const discountCategory = document.querySelector('input[name="category"]:checked').value;
   const discountRate = 0.1; // 10% discount
   console.log(processProducts(products, discountCategory, discountRate));
   const processedProducts = processProducts(products, discountCategory, discountRate);

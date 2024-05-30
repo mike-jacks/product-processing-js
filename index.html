@@ -9,6 +9,13 @@
   </head>
   <body>
     <div class="buttons">
+      <div>
+        <form>
+          <p>Choose category:</p>
+          <input type="radio" name="category" id="apparel" value="Apparel" checked /> <label for="apparel">Apparel</label>
+          <input type="radio" name="category" id="electronics" value="Electronics" /> <label for="electronics">Electronics</label>
+        </form>
+      </div>
       <button type="button" onclick="startProcessing()">Process Products</button>
       <table id="data"></table>
     </div>
